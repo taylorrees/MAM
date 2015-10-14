@@ -1,7 +1,6 @@
 # MAM (Mobile Attendance Monitoring)
 
-MAM uses RFID / Smart Card technology paired with a server to record attendance
-of students.
+MAM uses RFID / Smart Card technology paired with a node.js backend to record and monitor the attendance of students.
 
 ## Introduction
 
@@ -19,7 +18,7 @@ would be a hassle to implement and rather costly. A simple solution to this
 would be to have a mobile, connected swipe-in system that a lecturer could carry
 with them.
 
-The lecturer could then place this at the front of a lecture theatre 
+The lecturer could then place this at the front of a lecture theatre
 and allow all students in attendance to swipe in using their student ID cards.
 When swiped the student number from the card would be stored for access by the
 lecturer at a later date.
