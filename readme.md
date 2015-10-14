@@ -22,3 +22,8 @@ The lecturer could then place this at the front of a lecture theatre
 and allow all students in attendance to swipe in using their student ID cards.
 When swiped the student number from the card would be stored for access by the
 lecturer at a later date.
+
+## Requirements
+
+For this mobile attendance monitoring system to function correctly, a request
+must be made to the API with the correct authentication permissions.
