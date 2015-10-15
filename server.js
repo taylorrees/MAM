@@ -1,6 +1,13 @@
+// Server configuration.
+
 var express = require('express');
+var mongoose = require('mongoose');
 var api_routes = require('./api_routes');
 var app = express();
+
+// Open database connection.
+
+mongoose.connect('mongodb://localhost/MAM')
 
 // Handle all api specific requests through the api route.
 
