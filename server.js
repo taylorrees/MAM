@@ -2,7 +2,7 @@
 
 var express = require('express');
 var mongoose = require('mongoose');
-var api_routes = require('./api_routes');
+var api_routes = require('./routes/api_routes');
 var app = express();
 
 // Open database connection.
