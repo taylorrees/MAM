@@ -13,5 +13,23 @@ module.exports = function(req, res) {
     Finds all lectures within the authenticating users datastore
     and returns them as individual JSON objects.
   */
-  res.json('hello')
+
+  Lecture.find({}, function (err, lectures) {
+
+    if (err) {
+      console.error(err);
+      res
+        .status(400)
+        .end()
+    }
+
+    if (lectures) {
+      res
+        .json(lectures)
+        .status(200)
+        .end()
+    }
+
+  });
+
 }

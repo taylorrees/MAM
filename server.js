@@ -2,6 +2,7 @@
 
 var express = require('express');
 var mongoose = require('mongoose');
+var body_parser = require('body-parser');
 var api_routes = require('./routes/api_routes');
 var app = express();
 
@@ -9,8 +10,8 @@ var app = express();
 
 mongoose.connect('mongodb://localhost/MAM')
 
+app.use(body_parser.json());
 // Handle all api specific requests through the api route.
-
 app.use('/api', api_routes);
 
 // Start the server and listen for connection.

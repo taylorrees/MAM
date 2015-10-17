@@ -6,7 +6,7 @@ var mongoose = require("mongoose");
 var lecture_schema = new mongoose.Schema({
 
   timestamp: {type: Date, default: Date.now },
-  student_number: [Number]
+  student_numbers: [Number]
 
 });
 

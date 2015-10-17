@@ -15,4 +15,28 @@ module.exports = function(req, res) {
     lecture model.
   */
 
+  // Create a new lecture.
+  var lecture = new Lecture();
+
+  // Set the student_numbers value of the lecture.
+  lecture.student_numbers = req.body.student_numbers;
+
+  lecture.save(function(err){
+
+    if (err) {
+      console.error(err);
+      res
+        .status(400)
+        .end()
+    }
+
+    if (!err) {
+      console.log('Lecture added.');
+      res
+        .status(200)
+        .end()
+    }
+
+  });
+
 }
