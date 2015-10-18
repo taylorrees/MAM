@@ -1,7 +1,7 @@
 
 # Get Started
 
-For the rsn.py script to run the ```requests``` module is required.
+For the `rsn.py` script to run the ```requests``` module is required.
 
 Installing requests is simple with [pip](https://pip.pypa.io/),
 just run the following code in your terminal:
@@ -14,7 +14,7 @@ $ pip install requests
 
 # Information
 
-The rsn.py script is used to request a list of student numbers.
+The `rsn.py` script is used to request a list of student numbers.
 
 When the script is run the user can input a 7 digit integer (length of a
 Cardiff university student number) and hit enter. This will then prompt
