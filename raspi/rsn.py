@@ -1,3 +1,5 @@
+
+# File: rsn.py (request student number)
 #This script will request a list of student numbers.
 
 '''The requests module is used to make HTTP requests. It's
@@ -23,7 +25,7 @@ def request_numbers_loop():
             student_numbers.append(int(user_input))
         elif int(user_input) == -1:
             print (student_numbers)
-            r = requests.post('http://localhost:3000/api/lectures/add', json={"student_numbers":student_numbers})
+            r = requests.post('https://mamon.herokuapp.com/api/lectures/add', json={"student_numbers":student_numbers})
             print(r.json)
             student_numbers = []
         else:
