@@ -10,8 +10,9 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 // Open database connection.
-
-mongoose.connect('mongodb://localhost/MAM')
+// Database connection uri is located in /config/mongodb.js
+var connection_uri = require('./config/mongodb').connection_uri
+mongoose.connect(connection_uri)
 
 app.use(body_parser.json());
 // Handle all api specific requests through the api route.
