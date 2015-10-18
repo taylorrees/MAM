@@ -11,7 +11,7 @@ app.set('port', (process.env.PORT || 5000));
 
 // Open database connection.
 // Database connection uri is located in /config/mongodb.js
-var connection_uri = require('./config/mongodb').connection_uri
+var connection_uri = process.env.MONGOLAB_URI || require('./config/mongodb').connection_uri
 mongoose.connect(connection_uri)
 
 app.use(body_parser.json());
