@@ -46,7 +46,7 @@ $ sudo python /home/pi/rsn.py
 ```
 
 Then press `ctrl + x` to exit the file.
-Type `Y` to save the changes and hit return to confirm.
+Type `Y` to save the changes and hit `return` to confirm.
 
 Now you should test to see whether the script runs at start up. To do this
 reboot your pi by typing `sudo reboot`. If the process has worked successfully
