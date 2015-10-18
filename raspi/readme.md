@@ -19,6 +19,7 @@ $ wget https://raw.githubusercontent.com/taylorrees/MAM/master/raspi/rsn.py
 *(To check if the file downloaded successfully you can type `ls`. This should
 list all the files in the current direcetory.)*
 
+
 ### Install the modules
 
 For the `rsn.py` script to run the ```requests``` module is required.
@@ -31,6 +32,7 @@ $ pip install requests
 ```
 
 [Requests documentation](http://docs.python-requests.org/en/latest/)
+
 
 ### Run the script
 
