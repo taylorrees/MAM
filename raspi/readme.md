@@ -1,22 +1,25 @@
 
 # Get Started
 
+
+### Get the script
+
 Open the terminal on your raspberry pi and move into the `/home/pi` directory.
-This can be achieved by entering the following:
 
 ```
 $ cd ~
 ```
 
 Next download the python script `rsn.py` from [here](https://raw.githubusercontent.com/taylorrees/MAM/master/raspi/rsn.py).
-This can be achieved in terminal by entering:
 
 ```
 $ wget https://raw.githubusercontent.com/taylorrees/MAM/master/raspi/rsn.py
 ```
 
 *(To check if the file downloaded successfully you can type `ls`. This should
-list all the files in the current direcetory.)
+list all the files in the current direcetory.)*
+
+### Install the modules
 
 For the `rsn.py` script to run the ```requests``` module is required.
 
@@ -28,6 +31,8 @@ $ pip install requests
 ```
 
 [Requests documentation](http://docs.python-requests.org/en/latest/)
+
+### Run the script
 
 The script should now be able to run and POST to the MAM API. Run the
 script by typing the following:
