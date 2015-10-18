@@ -6,6 +6,9 @@ var body_parser = require('body-parser');
 var api_routes = require('./routes/api_routes');
 var app = express();
 
+// Set the application port.
+app.set('port', (process.env.PORT || 5000));
+
 // Open database connection.
 
 mongoose.connect('mongodb://localhost/MAM')
@@ -16,7 +19,7 @@ app.use('/api', api_routes);
 
 // Start the server and listen for connection.
 
-var server = app.listen(3000, function() {
+var server = app.listen(app.get('port'), function() {
   var host = server.address().address;
   var port = server.address().port;
 
